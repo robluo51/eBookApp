@@ -146,8 +146,29 @@
                         <sections>
                             <tableViewSection id="lTC-CB-ldm">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="SQD-Il-P9q">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="F55-0S-rLF">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F55-0S-rLF" id="d4A-K8-i34">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" 7. N'Golo Kanté" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vel-kr-4v3">
+                                                    <rect key="frame" x="48" y="0.0" width="279" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="GGG-WX-uQN" kind="push" id="btk-BH-c1x"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="SQD-Il-P9q">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SQD-Il-P9q" id="iY2-Yo-3m0">
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
@@ -168,7 +189,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="hkx-T7-F4j">
-                                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="88" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hkx-T7-F4j" id="mxB-dv-etW">
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
@@ -189,7 +210,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="x2i-GC-zgr">
-                                        <rect key="frame" x="0.0" y="88" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="132" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x2i-GC-zgr" id="apK-Ka-aUo">
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
@@ -209,7 +230,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="ALF-93-fq4">
-                                        <rect key="frame" x="0.0" y="132" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="176" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ALF-93-fq4" id="zwc-Eo-h5c">
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
@@ -230,7 +251,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="1uT-wN-M3C">
-                                        <rect key="frame" x="0.0" y="176" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="220" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1uT-wN-M3C" id="Ov5-u4-EhB">
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
@@ -251,7 +272,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="RVb-gz-jk3">
-                                        <rect key="frame" x="0.0" y="220" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="264" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RVb-gz-jk3" id="7Ox-aZ-5bK">
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
@@ -314,7 +335,7 @@ NATIONALITY: Spain DATE OF BIRTH:23.10.1992 HEIGHT: 189cm WEIGHT: 84.5kg</
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lg3-fQ-dLL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1609" y="-985"/>
+            <point key="canvasLocation" x="1146" y="-978"/>
         </scene>
         <!--Manager Team-->
         <scene sceneID="CcT-zg-5yi">
@@ -351,6 +372,9 @@ NATIONALITY: Spain DATE OF BIRTH:23.10.1992 HEIGHT: 189cm WEIGHT: 84.5kg</
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="IqC-ji-40p" kind="show" animates="NO" id="XHl-bh-4vK"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="6M7-yH-nXF" detailTextLabel="O4J-h3-DQd" style="IBUITableViewCellStyleSubtitle" id="3cw-y0-xVg">
                                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -607,6 +631,27 @@ NATIONALITY: Spain DATE OF BIRTH:23.10.1992 HEIGHT: 189cm WEIGHT: 84.5kg</
             <point key="canvasLocation" x="1352.8" y="947.67616191904051"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="4c3-M5-2PK">
+            <objects>
+                <viewController id="IqC-ji-40p" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KnJ-pH-ZfS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Conte" translatesAutoresizingMaskIntoConstraints="NO" id="n5J-HG-pWt">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="A9H-R4-KIY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XVg-JY-BZc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2133.5999999999999" y="966.56671664167925"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="fRG-za-ro2">
             <objects>
                 <viewController id="35c-Uv-oty" sceneMemberID="viewController">
@@ -635,7 +680,7 @@ NATIONALITY: Belgium DATE OF BIRTH:07.01.1991 HEIGHT: 173cm WEIGHT: 76kg</
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eqi-sk-pLW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2530" y="-1021"/>
+            <point key="canvasLocation" x="1993" y="-1079"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="kXO-Fw-Thn">
@@ -666,7 +711,7 @@ NATIONALITY: Belgium DATE OF BIRTH: 11.05.1992 HEIGHT: 199cm WEIGHT: 94kg<
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="29e-tB-QJq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3449" y="-859"/>
+            <point key="canvasLocation" x="2814" y="-978"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="FHR-32-uxK">
@@ -697,7 +742,7 @@ NATIONALITY: England DATE OF BIRTH: 19.12.1985 HEIGHT: 193cm WEIGHT: 86kg<
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZzZ-L1-CEV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2815" y="-205"/>
+            <point key="canvasLocation" x="3473" y="-630"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="eid-62-cOO">
@@ -728,7 +773,7 @@ NATIONALITY: Spain DATE OF BIRTH: 28.08.1989 HEIGHT: 178cm WEIGHT: 77.5kg<
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6aB-Ym-xMd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3473" y="144"/>
+            <point key="canvasLocation" x="2814" y="-214"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fnw-Ug-aOA">
@@ -759,15 +804,48 @@ NATIONALITY: Brazil DATE OF BIRTH: 22.04.1987 HEIGHT: 189cm WEIGHT: 84kg</
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CAS-Kd-DhK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2788" y="558"/>
+            <point key="canvasLocation" x="3473" y="163"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="VAz-gB-eSd">
+            <objects>
+                <viewController id="GGG-WX-uQN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fIX-pj-EED">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Xw-Jl-Z71">
+                                <rect key="frame" x="33" y="470" width="320" height="127"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">N'Golo Kanté 
+NATIONALITY: France DATE OF BIRTH: 29.03.1991 HEIGHT: 168cm WEIGHT: 68kg</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Kante" translatesAutoresizingMaskIntoConstraints="NO" id="iC9-ZI-ZMQ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="opC-oI-JT6"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RD5-8H-F9H"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hw4-cF-Fo1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2814" y="530"/>
         </scene>
     </scenes>
     <resources>
         <image name="Azpilicueta" width="2460" height="1640"/>
         <image name="Cahill" width="3000" height="2081"/>
+        <image name="Conte" width="1020" height="1530"/>
         <image name="Courtois" width="1200" height="675"/>
         <image name="Hazard" width="4000" height="2250"/>
         <image name="Home" width="800" height="1200"/>
+        <image name="Kante" width="1132" height="755"/>
         <image name="Luiz" width="1748" height="1165"/>
         <image name="Morata" width="2048" height="1536"/>
         <image name="backgroud" width="640" height="1136"/>
