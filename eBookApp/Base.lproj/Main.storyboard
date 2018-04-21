@@ -41,18 +41,18 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nve-01-eSC">
-                                <rect key="frame" x="10" y="77" width="272" height="560"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BEG-f7-xmM">
+                                <rect key="frame" x="7" y="74" width="260" height="520"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <mutableString key="text">切爾西足球俱樂部（Chelsea Football Club），是一間位於英格蘭首都倫敦的英格蘭俱樂部。其成立於1905年3月10日，主場位於倫敦的史丹佛橋球場。
 
 切爾西足球俱樂部成立超過一百年，在1955年首次贏得英格蘭最頂級足球聯賽冠軍。至今，切爾西共贏得過 6 次英格蘭頂級足球聯賽冠軍，7 次英格蘭足總盃冠軍，5 次英格蘭聯賽盃冠軍和 4 次英格蘭社區盾。歐洲賽方面，總共贏得 1 次歐洲冠軍聯賽冠軍，1 次歐洲聯賽冠軍，2 次歐洲盃賽優勝者盃冠軍和 1 次歐洲超級盃。
 
 在2017年，切爾西被福布斯雜誌評為世界第七最有價值的足球俱樂部。</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="MOo-8h-0QA"/>
@@ -61,13 +61,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p7c-FE-daa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-218" y="2616"/>
+            <point key="canvasLocation" x="-218.40000000000001" y="2615.4422788605698"/>
         </scene>
         <!--History-->
         <scene sceneID="rAu-lZ-nc4">
             <objects>
                 <navigationController id="euH-pn-1Da" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="History" id="FG5-kz-0J5"/>
+                    <tabBarItem key="tabBarItem" title="History" image="history" id="FG5-kz-0J5"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Y5F-dJ-7X0">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -84,7 +84,9 @@
         <scene sceneID="P5h-9S-LnT">
             <objects>
                 <navigationController id="pb7-PN-uFs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Staff" id="0dv-7A-ymD"/>
+                    <tabBarItem key="tabBarItem" title="Staff" image="coach" id="0dv-7A-ymD">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8sN-1z-vfh">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -101,7 +103,7 @@
         <scene sceneID="aqc-cl-F7Y">
             <objects>
                 <navigationController id="r0F-xp-VlQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Player" id="30R-9N-n1D"/>
+                    <tabBarItem key="tabBarItem" title="Player" image="player" id="30R-9N-n1D"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3sb-sD-SOf">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -143,7 +145,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="GGG-WX-uQN" kind="push" id="btk-BH-c1x"/>
+                                            <segue destination="GGG-WX-uQN" kind="show" id="btk-BH-c1x"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="SQD-Il-P9q">
@@ -164,7 +166,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="r7S-ia-Wuf" kind="push" id="Ym3-FI-lND"/>
+                                            <segue destination="r7S-ia-Wuf" kind="show" id="Ym3-FI-lND"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="hkx-T7-F4j">
@@ -185,7 +187,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="35c-Uv-oty" kind="push" id="VzL-HN-ywJ"/>
+                                            <segue destination="35c-Uv-oty" kind="show" id="VzL-HN-ywJ"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="x2i-GC-zgr">
@@ -205,7 +207,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="qlB-E2-0WI" kind="push" id="gjF-kf-i0y"/>
+                                            <segue destination="qlB-E2-0WI" kind="show" id="gjF-kf-i0y"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="ALF-93-fq4">
@@ -226,7 +228,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="nUn-PD-9KR" kind="push" id="E1L-j8-Hg7"/>
+                                            <segue destination="nUn-PD-9KR" kind="show" id="E1L-j8-Hg7"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="1uT-wN-M3C">
@@ -247,7 +249,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="3lm-iO-mw0" kind="push" id="Wws-o2-Hbe"/>
+                                            <segue destination="3lm-iO-mw0" kind="show" id="Wws-o2-Hbe"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="RVb-gz-jk3">
@@ -268,7 +270,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="Oti-m2-AP7" kind="push" id="9lr-ix-wk8"/>
+                                            <segue destination="Oti-m2-AP7" kind="show" id="9lr-ix-wk8"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -323,15 +325,15 @@ NATIONALITY: Spain DATE OF BIRTH:23.10.1992 HEIGHT: 189cm WEIGHT: 84.5kg</
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NSL-fG-Jq1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <sections>
                             <tableViewSection id="YdT-om-tvk">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="QeO-aJ-poB" detailTextLabel="46R-yA-hUl" style="IBUITableViewCellStyleSubtitle" id="awP-kj-AYn">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="QeO-aJ-poB" detailTextLabel="46R-yA-hUl" style="IBUITableViewCellStyleSubtitle" id="awP-kj-AYn">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="awP-kj-AYn" id="01o-KP-Kay">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Antonio Conte" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QeO-aJ-poB">
@@ -352,7 +354,7 @@ NATIONALITY: Spain DATE OF BIRTH:23.10.1992 HEIGHT: 189cm WEIGHT: 84.5kg</
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="IqC-ji-40p" kind="show" animates="NO" id="XHl-bh-4vK"/>
+                                            <segue destination="IqC-ji-40p" kind="show" id="XHl-bh-4vK"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="6M7-yH-nXF" detailTextLabel="O4J-h3-DQd" style="IBUITableViewCellStyleSubtitle" id="3cw-y0-xVg">
@@ -379,7 +381,7 @@ NATIONALITY: Spain DATE OF BIRTH:23.10.1992 HEIGHT: 189cm WEIGHT: 84.5kg</
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="D7k-ZP-qfv" kind="push" id="Y5x-0X-cNW"/>
+                                            <segue destination="D7k-ZP-qfv" kind="show" id="Y5x-0X-cNW"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="TKY-f4-VIQ" detailTextLabel="G8w-QG-DIw" style="IBUITableViewCellStyleSubtitle" id="y06-rh-o7C">
@@ -406,7 +408,7 @@ NATIONALITY: Spain DATE OF BIRTH:23.10.1992 HEIGHT: 189cm WEIGHT: 84.5kg</
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="xmm-MX-JzH" kind="push" id="M0l-7G-rO2"/>
+                                            <segue destination="xmm-MX-JzH" kind="show" id="UMw-bB-goD"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="oSp-9Z-fPs" detailTextLabel="OAg-cl-v39" style="IBUITableViewCellStyleSubtitle" id="URD-pE-Gpb">
@@ -433,14 +435,14 @@ NATIONALITY: Spain DATE OF BIRTH:23.10.1992 HEIGHT: 189cm WEIGHT: 84.5kg</
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="oHz-L3-Mij" kind="push" id="b5K-XV-YQX"/>
+                                            <segue destination="oHz-L3-Mij" kind="show" id="2Hy-Ty-ZLF"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="MnK-kF-d9t" detailTextLabel="58K-Wx-clp" style="IBUITableViewCellStyleSubtitle" id="S83-EX-rj7">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="MnK-kF-d9t" detailTextLabel="58K-Wx-clp" style="IBUITableViewCellStyleSubtitle" id="S83-EX-rj7">
                                         <rect key="frame" x="0.0" y="176" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="S83-EX-rj7" id="fz0-ox-blf">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Gianluca Spinelli" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MnK-kF-d9t">
@@ -459,12 +461,15 @@ NATIONALITY: Spain DATE OF BIRTH:23.10.1992 HEIGHT: 189cm WEIGHT: 84.5kg</
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="4pA-fw-71P" kind="show" id="Bkk-ZU-rKq"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="uak-mm-Thg" detailTextLabel="DDp-Ci-G4a" style="IBUITableViewCellStyleSubtitle" id="fT5-4i-t2W">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="uak-mm-Thg" detailTextLabel="DDp-Ci-G4a" style="IBUITableViewCellStyleSubtitle" id="fT5-4i-t2W">
                                         <rect key="frame" x="0.0" y="220" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fT5-4i-t2W" id="7Du-Ib-IKD">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Henrique Hilário" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uak-mm-Thg">
@@ -483,12 +488,15 @@ NATIONALITY: Spain DATE OF BIRTH:23.10.1992 HEIGHT: 189cm WEIGHT: 84.5kg</
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="yfE-YW-j7j" kind="show" id="gRa-ew-yb8"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="oMP-6Q-aqr" detailTextLabel="bIQ-bw-axK" style="IBUITableViewCellStyleSubtitle" id="tcl-19-P2x">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="oMP-6Q-aqr" detailTextLabel="bIQ-bw-axK" style="IBUITableViewCellStyleSubtitle" id="tcl-19-P2x">
                                         <rect key="frame" x="0.0" y="264" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tcl-19-P2x" id="BoS-q7-44T">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Paolo Bertelli" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oMP-6Q-aqr">
@@ -507,12 +515,15 @@ NATIONALITY: Spain DATE OF BIRTH:23.10.1992 HEIGHT: 189cm WEIGHT: 84.5kg</
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="t6D-j9-SBV" kind="show" id="IHI-Lk-kMz"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="I51-ul-hEZ" detailTextLabel="dDF-Q3-Yrr" style="IBUITableViewCellStyleSubtitle" id="otU-Rj-W14">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="I51-ul-hEZ" detailTextLabel="dDF-Q3-Yrr" style="IBUITableViewCellStyleSubtitle" id="otU-Rj-W14">
                                         <rect key="frame" x="0.0" y="308" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="otU-Rj-W14" id="jWN-fI-LzW">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Julio Tous" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="I51-ul-hEZ">
@@ -531,12 +542,15 @@ NATIONALITY: Spain DATE OF BIRTH:23.10.1992 HEIGHT: 189cm WEIGHT: 84.5kg</
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="tUh-97-tgI" kind="show" id="10y-Z8-v7d"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="0ZF-gu-9Ce" detailTextLabel="QBb-zv-W7d" style="IBUITableViewCellStyleSubtitle" id="zFK-lM-1vM">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="0ZF-gu-9Ce" detailTextLabel="QBb-zv-W7d" style="IBUITableViewCellStyleSubtitle" id="zFK-lM-1vM">
                                         <rect key="frame" x="0.0" y="352" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zFK-lM-1vM" id="tqo-Fr-JMb">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Chris Jones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0ZF-gu-9Ce">
@@ -555,12 +569,15 @@ NATIONALITY: Spain DATE OF BIRTH:23.10.1992 HEIGHT: 189cm WEIGHT: 84.5kg</
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="GbZ-lK-Zxs" kind="show" id="xZ2-tW-czC"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="2qC-ir-IUy" detailTextLabel="pxV-dK-IaX" style="IBUITableViewCellStyleSubtitle" id="6NK-YK-fZh">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="2qC-ir-IUy" detailTextLabel="pxV-dK-IaX" style="IBUITableViewCellStyleSubtitle" id="6NK-YK-fZh">
                                         <rect key="frame" x="0.0" y="396" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6NK-YK-fZh" id="WDb-J1-8jD">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Constantino Coratti" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2qC-ir-IUy">
@@ -579,30 +596,9 @@ NATIONALITY: Spain DATE OF BIRTH:23.10.1992 HEIGHT: 189cm WEIGHT: 84.5kg</
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="cxu-NC-Clx" detailTextLabel="gqe-y7-e01" style="IBUITableViewCellStyleSubtitle" id="KVM-u9-Uo4">
-                                        <rect key="frame" x="0.0" y="440" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KVM-u9-Uo4" id="7NC-yN-9Lu">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cxu-NC-Clx">
-                                                    <rect key="frame" x="16" y="5" width="33.5" height="20.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gqe-y7-e01">
-                                                    <rect key="frame" x="16" y="25.5" width="44" height="14.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="dZF-4V-imQ" kind="show" id="l5T-AP-RG6"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -616,7 +612,7 @@ NATIONALITY: Spain DATE OF BIRTH:23.10.1992 HEIGHT: 189cm WEIGHT: 84.5kg</
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fBy-5H-sDt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1352.8" y="947.67616191904051"/>
+            <point key="canvasLocation" x="1353" y="1468"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="4c3-M5-2PK">
@@ -637,7 +633,7 @@ NATIONALITY: Spain DATE OF BIRTH:23.10.1992 HEIGHT: 189cm WEIGHT: 84.5kg</
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XVg-JY-BZc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2133.5999999999999" y="966.56671664167925"/>
+            <point key="canvasLocation" x="2134" y="893"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fRG-za-ro2">
@@ -825,10 +821,10 @@ NATIONALITY: France DATE OF BIRTH: 29.03.1991 HEIGHT: 168cm WEIGHT: 68kg</
             </objects>
             <point key="canvasLocation" x="2814" y="530"/>
         </scene>
-        <!--View Controller-->
+        <!--Guy Laurence-->
         <scene sceneID="JRv-Kx-FFu">
             <objects>
-                <viewController id="oHz-L3-Mij" sceneMemberID="viewController">
+                <viewController title="Guy Laurence" id="oHz-L3-Mij" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="azW-MC-oOM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -845,12 +841,12 @@ NATIONALITY: France DATE OF BIRTH: 29.03.1991 HEIGHT: 168cm WEIGHT: 68kg</
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="th5-sl-BTf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1352.8" y="1755.4722638680662"/>
+            <point key="canvasLocation" x="1353" y="2249"/>
         </scene>
-        <!--View Controller-->
+        <!--Angelo Alessio-->
         <scene sceneID="uTA-YM-oDr">
             <objects>
-                <viewController id="D7k-ZP-qfv" sceneMemberID="viewController">
+                <viewController title="Angelo Alessio" id="D7k-ZP-qfv" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DWv-5L-dkh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -867,12 +863,12 @@ NATIONALITY: France DATE OF BIRTH: 29.03.1991 HEIGHT: 168cm WEIGHT: 68kg</
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GDt-6e-YPS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2134" y="1682"/>
+            <point key="canvasLocation" x="2814" y="1246"/>
         </scene>
-        <!--View Controller-->
+        <!--Gianluca Conte-->
         <scene sceneID="7ir-Lk-cMa">
             <objects>
-                <viewController id="xmm-MX-JzH" sceneMemberID="viewController">
+                <viewController title="Gianluca Conte" id="xmm-MX-JzH" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t1E-vS-kyI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -889,21 +885,162 @@ NATIONALITY: France DATE OF BIRTH: 29.03.1991 HEIGHT: 168cm WEIGHT: 68kg</
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bie-Ag-GZ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="598" y="1791"/>
+            <point key="canvasLocation" x="598" y="2249"/>
+        </scene>
+        <!--Henrique Hilário-->
+        <scene sceneID="cfD-DE-MVa">
+            <objects>
+                <viewController title="Henrique Hilário" id="yfE-YW-j7j" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TdN-U5-Gj4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HH" translatesAutoresizingMaskIntoConstraints="NO" id="FxU-4d-FBM">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ORz-hh-2D1"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dBV-MF-TRu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XRw-7t-tgY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2134" y="2340"/>
+        </scene>
+        <!--Gianluca Spinelli-->
+        <scene sceneID="Xmf-pX-YIj">
+            <objects>
+                <viewController title="Gianluca Spinelli" id="4pA-fw-71P" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IuE-cE-X7H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GS" translatesAutoresizingMaskIntoConstraints="NO" id="SBc-za-mMW">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="F1d-Zo-8ap"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xaK-BU-FY5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Shj-t7-0w3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2134" y="1633"/>
+        </scene>
+        <!--Paolo Bertelli-->
+        <scene sceneID="4FS-SJ-iTa">
+            <objects>
+                <viewController title="Paolo Bertelli" id="t6D-j9-SBV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6vM-lP-hR5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PB" translatesAutoresizingMaskIntoConstraints="NO" id="UVg-vW-ZkP">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fAY-KD-taZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BMu-Wo-FZG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tOy-Yd-udg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2814" y="1967"/>
+        </scene>
+        <!--Julio Tous-->
+        <scene sceneID="Xwy-bl-dxY">
+            <objects>
+                <viewController title="Julio Tous" id="tUh-97-tgI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NRJ-Jk-GcL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="JT" translatesAutoresizingMaskIntoConstraints="NO" id="tKE-gR-oBQ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Fpd-Nf-YP0"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="T0n-87-TVT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xPU-qb-aDC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2814" y="2650"/>
+        </scene>
+        <!--Chris Jones-->
+        <scene sceneID="ruc-6d-JXJ">
+            <objects>
+                <viewController title="Chris Jones" id="GbZ-lK-Zxs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O54-Sd-YpL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CJ" translatesAutoresizingMaskIntoConstraints="NO" id="ahf-hi-Zfg">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="spO-m5-9Rg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5rF-nc-P3H"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7QW-5g-LYH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1353" y="2971"/>
+        </scene>
+        <!--Constantino Coratti-->
+        <scene sceneID="8nG-tL-Xug">
+            <objects>
+                <viewController title="Constantino Coratti" id="dZF-4V-imQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v5O-dO-UrZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CC" translatesAutoresizingMaskIntoConstraints="NO" id="iWp-3G-4s3">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="tPa-Xn-9jA"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IQf-yo-O5a"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b7n-s3-iV0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="598" y="2985"/>
         </scene>
     </scenes>
     <resources>
         <image name="Angelo-Alessio" width="1200" height="1800"/>
         <image name="Azpilicueta" width="2460" height="1640"/>
+        <image name="CC" width="777" height="1024"/>
+        <image name="CJ" width="1010" height="1390"/>
         <image name="Cahill" width="3000" height="2081"/>
         <image name="Conte" width="1020" height="1530"/>
         <image name="Courtois" width="1200" height="675"/>
+        <image name="GS" width="787" height="1024"/>
         <image name="G_Conte" width="1024" height="670"/>
+        <image name="HH" width="1236" height="1236"/>
         <image name="Hazard" width="4000" height="2250"/>
+        <image name="JT" width="408" height="612"/>
         <image name="Kante" width="1132" height="755"/>
         <image name="Lauren" width="1536" height="854"/>
         <image name="Luiz" width="1748" height="1165"/>
         <image name="Morata" width="2048" height="1536"/>
+        <image name="PB" width="867" height="1390"/>
         <image name="backgroud" width="640" height="1136"/>
+        <image name="coach" width="40" height="40"/>
+        <image name="history" width="40" height="40"/>
+        <image name="player" width="40" height="40"/>
     </resources>
 </document>
